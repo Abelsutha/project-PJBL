@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-section {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.home-image {
+    width: auto;
+    height: 50vh; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 10;
+    pointer-events: none;
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+.explore-btn {
+    background-color: #007BFF;
+}
+
+.explore-btn:hover {
+    background-color: #0056b3; 
+}
+
+.about-btn {
+    background-color: #FF5733; 
+}
+
+.about-btn:hover {
+    background-color: #c44126; 
+}
+
+.home-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+.home-image {
+    width: 100%;
+    height: auto; 
+}
+
+.footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 40px 0; 
+    font-family: Arial, sans-serif;
+    clear: both; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about, .footer-links, .footer-contact {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bbb;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        padding: 10px 0;
+    }
+}
